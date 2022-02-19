@@ -12,7 +12,10 @@ connectDB();
 const app = express();
 
 app.use(cors({ origin: "*" }));
+
 app.use("/api/characters", require("./routes/characterRoutes"));
+app.use("/api/monsters", require("./routes/monsterRoutes"));
+app.use("/api/games", require("./routes/gameRoutes"));
 
 app.use(errorHandler);
 
