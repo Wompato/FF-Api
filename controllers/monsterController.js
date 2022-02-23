@@ -6,6 +6,12 @@ const Monster = require("../model/monsterModel");
 // @route GET /api/monsters
 // @access Public
 const getMonsters = asyncHandler(async (req, res) => {
+  const { origin } = req.query;
+  if (origin) {
+    const monsters = await Monster.find({ origin: origin });
+    res.status(200).json(monsters);
+    return;
+  }
   const monsters = await Monster.find();
 
   res.status(200).json(monsters);

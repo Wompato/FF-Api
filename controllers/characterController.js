@@ -6,6 +6,12 @@ const Character = require("../model/characterModel");
 // @route GET /api/characters
 // @access Private
 const getCharacters = asyncHandler(async (req, res) => {
+  const { origin } = req.query;
+  if (origin) {
+    const characters = await Character.find({ origin: origin });
+    res.status(200).json(characters);
+  }
+
   const characters = await Character.find();
 
   res.status(200).json(characters);
