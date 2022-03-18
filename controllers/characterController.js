@@ -2,14 +2,18 @@ const asyncHandler = require("express-async-handler");
 
 const Character = require("../model/characterModel");
 
-// @desc Get characters
-// @route GET /api/characters
-// @access Private
 const getCharacters = asyncHandler(async (req, res) => {
-  const { origin } = req.query;
-  if (origin) {
-    const characters = await Character.find({ origin: origin });
+  const { origin, name, gender } = req.query;
+  const options = {
+    origin,
+    name,
+    gender,
+  };
+  const validOptions = removeUndefKeys(options);
+  if (validOptions) {
+    const characters = await Character.find(validOptions);
     res.status(200).json(characters);
+    return;
   }
 
   const characters = await Character.find();
@@ -17,9 +21,6 @@ const getCharacters = asyncHandler(async (req, res) => {
   res.status(200).json(characters);
 });
 
-// @desc Get characters
-// @route GET /api/characters/:id
-// @access Private
 const getCharacter = asyncHandler(async (req, res) => {
   const { charId } = req.params.id;
 
