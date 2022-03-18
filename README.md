@@ -23,7 +23,7 @@ Various end points for characters from the series, monsters, and games!
 
 [https://ff-dex.herokuapp.com/api/characters?origin=Final Fantasy 7](https://ff-dex.herokuapp.com/api/characters?origin=Final Fantasy 7)
 
-**For now query params are only supported on character controller for name, origin, and gender.
+**For now query params are only supported on character controller for name, origin, and gender.**
 
 ## Character Properties
 
