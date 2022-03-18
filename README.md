@@ -19,9 +19,9 @@ Various end points for characters from the series, monsters, and games!
 
 ## Add query paramaters to filter out the data you request!
 
-[https://ff-dex.herokuapp.com/api/characters?name=Cloud Strife](https://ff-dex.herokuapp.com/api/characters?name=Cloud Strife)
+[https://ff-dex.herokuapp.com/api/characters?name=Cloud Strife](<https://ff-dex.herokuapp.com/api/characters?name=Cloud Strife>)
 
-[https://ff-dex.herokuapp.com/api/characters?origin=Final Fantasy 7](https://ff-dex.herokuapp.com/api/characters?origin=Final Fantasy 7)
+[https://ff-dex.herokuapp.com/api/characters?origin=Final Fantasy 7](<https://ff-dex.herokuapp.com/api/characters?origin=Final Fantasy 7>)
 
 **For now query params are only supported on character controller for name, origin, and gender.**
 
