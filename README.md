@@ -9,38 +9,41 @@ my application.
 
 ## Simple to get started!
 
-various end points for characters from the series, monsters, and games!
+Various end points for characters from the series, monsters, and games!
 
 [https://ff-dex.herokuapp.com/api/characters](https://ff-dex.herokuapp.com/api/characters)
+
 [https://ff-dex.herokuapp.com/api/monsters](https://ff-dex.herokuapp.com/api/monsters)
+
 [https://ff-dex.herokuapp.com/games](https://ff-dex.herokuapp.com/games)
 
 ## Add query paramaters to filter out the data you request!
 
 [https://ff-dex.herokuapp.com/api/characters?name=Cloud Strife](https://ff-dex.herokuapp.com/api/characters?name=Cloud Strife)
+
 [https://ff-dex.herokuapp.com/api/characters?origin=Final Fantasy 7](https://ff-dex.herokuapp.com/api/characters?origin=Final Fantasy 7)
 
 **For now query params are only supported on character controller for name, origin, and gender.
 
 ## Character Properties
 
-  ⋅⋅* Name
-  ⋅⋅* Origin
-  ⋅⋅* Age
-  ⋅⋅* Signature Weapon
-  ⋅⋅* Description
-  ⋅⋅* Pictures
+  - Name
+  - Origin
+  - Age
+  - Signature Weapon
+  - Description
+  - Pictures
   
 ## Monster Properties
 
-  ⋅⋅* Name
-  ⋅⋅* Origin
-  ⋅⋅* Description
-  ⋅⋅* Pictures
+  - Name
+  - Origin
+  - Description
+  - Pictures
   
 ## Character Properties
 
-  ⋅⋅* Name
-  ⋅⋅* Release Date
-  ⋅⋅* Description
-  ⋅⋅* Pictures
+  - Name
+  - Release Date
+  - Description
+  - Pictures
